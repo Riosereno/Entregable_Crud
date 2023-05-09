@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "171cee93-7747-49ab-877f-7c33fe132a68",
+		"name": "User_db",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27214680"
+	},
+	"item": [
+		{
+			"name": "GetUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://user-crud-t8v7.onrender.com",
+					"protocol": "https",
+					"host": [
+						"user-crud-t8v7",
+						"onrender",
+						"com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"firstname\":\"Rosa\",\r\n\"lastname\":\"Perez\",\r\n\"email\":\"rosita@gmail.com\",\r\n\"password\": \"rositaz23\",\r\n\"birthday\": \"1996/10/11\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://user-crud-t8v7.onrender.com/users",
+					"protocol": "https",
+					"host": [
+						"user-crud-t8v7",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get one user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://user-crud-t8v7.onrender.com/users/2",
+					"protocol": "https",
+					"host": [
+						"user-crud-t8v7",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://user-crud-t8v7.onrender.com/users",
+					"protocol": "https",
+					"host": [
+						"user-crud-t8v7",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\": \"Penelope\",\r\n    \"lastname\":\"Millan\",\r\n    \"email\":\"millan@gmail.com\",\r\n    \"password\": \"123pol\",\r\n    \"birthday\": \"1980-11-12\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://user-crud-t8v7.onrender.com/users/1",
+					"protocol": "https",
+					"host": [
+						"user-crud-t8v7",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://user-crud-t8v7.onrender.com/users/4",
+					"protocol": "https",
+					"host": [
+						"user-crud-t8v7",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"users",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
